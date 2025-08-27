@@ -21,7 +21,7 @@ int main() {
     float pib2;             // PIB em Bilhões
     int pontosTuristicos2;  //Número de pontos turísticos
 
-    //As variavéis servem para armazenar as informações que o programa precisar manipular e mostrar.
+    //As variavéis servem para armazenar as informações que o programa precisa manipular e mostrar.
 
     //Entrada dos dados da carta1
     printf("== Carta 1 ==\n");
