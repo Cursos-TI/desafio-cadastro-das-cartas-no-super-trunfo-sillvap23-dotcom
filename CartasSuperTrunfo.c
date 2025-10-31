@@ -115,6 +115,21 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
     printf("PIB per Capita: R$ %.2f\n", pibPercapita2);
 
+  // Super Poder (soma dos atributos + PIB per capita + inverso da densidade)
+    float super_poder1 = populacao1 + area1 + pib1 + pontos1 + pib_per_capita1 + (1 / densidade1);
+    float super_poder2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2 + (1 / densidade2);
 
+    // Exibição dos resultados das comparações
+    printf("\nComparacao de Cartas:\n\n");
+
+    printf("Populacao: Carta 1 venceu (%d)\n", populacao1 > populacao2);
+    printf("Area: Carta 1 venceu (%d)\n", area1 > area2);
+    printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
+    printf("Pontos Turisticos: Carta 1 venceu (%d)\n", pontos1 > pontos2);
+    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2); // menor vence
+    printf("PIB per Capita: Carta 1 venceu (%d)\n", pib_per_capita1 > pib_per_capita2);
+    printf("Super Poder: Carta 1 venceu (%d)\n", super_poder1 > super_poder2);
+
+  
     return 0;
 }
